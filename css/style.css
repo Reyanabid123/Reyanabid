@@ -1,12 +1,9 @@
-@font-face {
-    font-family:Poppins ;
-    src: url(../assects/font/Poppins-Black.woff2);
-}
+
 *{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family:Poppins;
+  font-family:LAGISTHA;
   user-select: none;
   font-weight: 100;
   -webkit-user-select: none;
@@ -18,10 +15,11 @@ html,body{
 .navbar-section{
     width: 100%;
     height: 90px;
+  font-family: LAGISTHA;
     /* border: 2px solid red ; */
     display: flex;
     justify-content: space-between;
-    padding: 0px 10px;
+    padding: 0px 20px;
     font-size: 20px;
 }
 .headingh1{
