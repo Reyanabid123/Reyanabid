@@ -1,35 +1,41 @@
-
-*{
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  font-family:LAGISTHA;
-  user-select: none;
-  font-weight: 100;
-  -webkit-user-select: none;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: moonhouse;
+    user-select: none;
+    font-weight: 100;
+    -webkit-user-select: none;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
-.navbar-section{
+
+.navbar-section {
     width: 100%;
     height: 90px;
-  font-family: LAGISTHA;
+    font-family: moonhouse;
     /* border: 2px solid red ; */
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px;
-    font-size: 20px;
+    padding: 10px 30px;
+
+    font-size: 15px;
 }
-.headingh1{
-    font-size: 158px;
+
+.headingh1 {
+    font-size: 128px;
     line-height: 150px;
-    text-align: center;
-    padding: 100px 20px ;
+    text-transform: uppercase;
     letter-spacing: -8px;
+    margin: 150px 200px;
+    
 }
-.project-seen{
+
+.project-seen {
     padding: 1000px 100px;
     text-align: center;
     font-size: 48px;
@@ -38,25 +44,38 @@ html,body{
     height: 100vh;
     width: 100%;
 }
-.section-3{
+
+.section-3 {
     height: 100vh;
     width: 100%;
     text-align: center;
     font-size: 30px;
     font-weight: 900;
 }
-.div-for-box{
-    height: 30vh;
-    width: 17%;
-    border: 2px solid rgb(0, 0, 0);
-    border-style: dashed;
+
+.div-for-box {
+    /* height: 10vh; */
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* border-style: dashed; */
     float: right;
     margin: 90px 0px;
     text-align: left;
-    padding: 10px 10px;
+    padding: 2px 10px;
 }
+
 .div-for-box p {
-    font-family: sans-serif;
+    font-family: Hello Ketta;
     font-weight: 700;
     line-height: -290px;
+    font-size: 50px;
+}
+
+.section-4 {
+
+    text-align: center;
+
+}
+
+.section-4>h2 {
+    font-size: 70px;
 }
