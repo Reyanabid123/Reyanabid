@@ -29,6 +29,7 @@ body {
     text-transform: uppercase;
     letter-spacing: -8px;
     margin: 150px 200px;
+    text-align: center;
 }
 /* Sidebar Menu */
 .sidebar-menu {
