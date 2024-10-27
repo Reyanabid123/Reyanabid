@@ -1,5 +1,5 @@
 @font-face {
-    font-family: moonhouse;
+    font-family: moon-house;
     src: url(../assects/font/moon-house.woff2);
 }
 
@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: moonhouse;
+    font-family: moon-house;
     user-select: none;
     font-weight: 100;
     -webkit-user-select: none;
