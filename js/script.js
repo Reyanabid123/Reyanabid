@@ -11,6 +11,7 @@ const sidebarMenu = document.getElementById('menu');
 
 menuIcon.addEventListener('click', () => {
     sidebarMenu.classList.toggle('menu-open');
+
 });
 
 // Shery.js Effects
@@ -37,4 +38,12 @@ Shery.textAnimate(".headingh1", {
 
 Shery.hoverWithMediaCircle(".headingh1", {
     images: ["image1.jpg", "image2.jpg", "image3.jpg"],
+});
+menuIcon.addEventListener('click', () => {
+    gsap.to(sidebarMenu, {
+        x: sidebarMenu.classList.contains('menu-open') ? 0 : 300,
+        duration: 0.8,
+        ease: "power2.out",
+    });
+    sidebarMenu.classList.toggle('menu-open');
 });
