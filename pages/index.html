@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Password Generator</h1>
+        <p>Generate strong, unique passwords to enhance your online security.</p>
+        <button onclick="generatePasswords()">Generate</button>
+        <div id="passwordContainer" class="password-grid"></div>
+        <div class="suggestions" id="suggestion">Tip: Use unique passwords for different accounts!</div>
+    </div>
+
+    <!-- Popup Notification -->
+    <div id="popup" class="popup hidden">
+        <span class="checkmark">✔️</span> Password copied to clipboard!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
