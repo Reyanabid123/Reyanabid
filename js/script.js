@@ -38,6 +38,7 @@ Shery.textAnimate(".headingh1", {
 
 Shery.hoverWithMediaCircle(".headingh1", {
     images: ["image1.jpg", "image2.jpg", "image3.jpg"],
+
 });
 menuIcon.addEventListener('click', () => {
     gsap.to(sidebarMenu, {
