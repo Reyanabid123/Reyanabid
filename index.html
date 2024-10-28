@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reyanabid -- Profile</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="main" data-scroll-container>
-        <!-- Navbar Section -->
-        <div class="navbar-section">
-            <h1>Reyan</h1>
-            <h1><i class="ri-menu-3-line menu-icon"></i></h1>
-        </div>
-
-        <!-- Sidebar Menu with Social Links -->
-        <div class="sidebar-menu" id="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <!-- Social Links -->
-            <div class="social-links">
-                <!-- <a href="https://facebook.com" target="_blank" rel=""><i class="ri-facebook-circle-line"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="ri-instagram-line"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="ri-linkedin-box-line"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="ri-twitter-line"></i></a> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reyanabid -- Profile</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/sheryjs/dist/Shery.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main" data-scroll-container>
+            <!-- Navbar Section -->
+            <div class="navbar-section">
+                <h1>Reyan</h1>
+                <h1><i class="ri-menu-3-line menu-icon"></i></h1>
             </div>
-        </div>
 
-        <!-- Content Sections -->
-        <div class="content">
-            <h1 class="headingh1">My Projects</h1>
+            <!-- Sidebar Menu with Social Links -->
+            <div class="sidebar-menu" id="menu">
+               
+                <!-- Social Links -->
+
+            </div>
+
+            <!-- Content Sections -->
+            <div class="content">
+                <h1 class="headingh1">My Projects</h1>
+            </div>
+            <div class="projects-section">
+                <div class="project_1">
+                    <div class="img-div" style="height: 500px;width: 30%;"><img src="https://i.pinimg.com/originals/ee/1e/63/ee1e63300b69f72a72e7e010b902c3b8.jpg" alt="animaI boy img"></div>
+                </div>
+            </div>
             <div class="project-seen">
                 <h1>You've Seen My Recent Projects</h1>
             </div>
@@ -46,51 +46,17 @@
                     <button>Get my email</button>
                 </a>
             </div>
+
         </div>
-    </div>
 
-    <!-- Gsap, Three.js, Shery.js, and Locomotive Scroll Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script>
-        // Locomotive Scroll Initialization
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('.main'),
-            smooth: true,
-            lerp: 0.2
-        });
-
-        // Sidebar Menu Toggle
-        const menuIcon = document.querySelector('.menu-icon');
-        const sidebarMenu = document.getElementById('menu');
-
-        menuIcon.addEventListener('click', () => {
-            sidebarMenu.classList.toggle('menu-open');
-        });
-
-        // Shery.js Effects
-        Shery.mouseFollower({
-            skew: true,
-            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-            duration: 0.1,
-            locomotive: true,
-        });
-
-        // Staggered Hover Effect on Menu Links
-        Shery.staggerHover(".sidebar-menu ul li a", {
-            duration: 0.4,
-            ease: "power3.out",
-            opacity: 1,
-            scale: 1.2,
-        });
-
-        // Social Links Hover Animation
-        Shery.hoverWithMediaCircle(".social-links a", {
-            scale: 1.5,
-            skew: true,
-            duration: 0.3,
-        });
-    </script>
-</body>
+        <!-- Gsap, Three.js, Shery.js, and Locomotive Scroll Scripts -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+      <script src="js/script.js"></script>
+    
+    
+    </body>
 </html>

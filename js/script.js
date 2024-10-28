@@ -47,3 +47,13 @@ menuIcon.addEventListener('click', () => {
     });
     sidebarMenu.classList.toggle('menu-open');
 });
+Shery.imageEffect(".img-div img", {
+    style: 3,
+    debug: true,
+    config: {
+        uFrequencyX: { value: 100, range: [0, 100] },
+        uFrequencyY: { value: 44.86, range: [0, 100] },
+        uFrequencyZ: { value: 100, range: [0, 100] },
+        uTime: { value: 37.14299999999965 },
+    },
+});
