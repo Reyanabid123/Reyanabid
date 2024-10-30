@@ -26,13 +26,13 @@ body {
     justify-content: space-between;
     padding: clamp(5px, 2vw, 15px) clamp(10px, 4vw, 30px);
     font-size: clamp(12px, 1.5vw, 15px);
-    border: 2px solid rgb(221, 255, 0);
+    /* border: 2px solid rgb(221, 255, 0); */
 }
 
 .content {
     height: 100vh;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .headingh1 {
@@ -49,26 +49,32 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    /* Hides scroll bar */
-    gap: 20px;
-    padding: 20px;
+    /* Hides the scrollbar */
     height: 100vh;
-    width: 400%;
-    /* Adjust based on the number of projects */
+    width: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .project {
-    width: 25%;
-    /* Adjust size as needed */
+    width: 30vw;
+    /* Adjust to show more or fewer projects per view */
     text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
+    flex: 0 0 auto;
+    height: 70vh;
+    text-align: right;
+    /* Prevents items from resizing */
 }
 .project img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
+}
+.project span{
+    font-size: 20px;
 }
 
 .img-div {
@@ -90,7 +96,7 @@ body {
     font-weight: 100;
     height: 100vh;
     width: 100%;
-    border: 2px solid rgb(221, 255, 0);
+    /* border: 2px solid rgb(221, 255, 0); */
     white-space: nowrap;
 }
 
@@ -100,19 +106,19 @@ body {
     text-align: center;
     font-size: clamp(18px, 3vw, 30px);
     font-weight: 900;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .section-4 {
     height: 100vh;
     width: 100%;
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 50vh 0px;
 }
 
 .section-4>h2 {
-    font-size: clamp(30px, 5vw, 70px);
+    font-size: clamp(50px, 5vw, 70px);
     white-space: nowrap;
 
     /* margin: ; */
@@ -133,6 +139,6 @@ body {
     /* z-index: -2; */
     height: 50vh;
     width: 100%;
-    border: 2px solid rgb(255, 0, 0);
+    /* border: 2px solid rgb(255, 0, 0); */
     background: #000;
 }
