@@ -53,3 +53,16 @@ Shery.imageEffect(".img-div img", {
     debug: true,
    
 });
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".projects-section", {
+    xPercent: -100,  // Adjust based on how far to scroll horizontally
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".projects-section",
+        start: "top top",   // Start scrolling when the section is at the top
+        end: "bottom top",  // End scrolling at the bottom of the page
+        scrub: true,        // Smooth scrolling effect
+        pin: true           // Pins the section for scroll-triggered effect
+    }
+});
