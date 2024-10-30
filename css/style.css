@@ -26,8 +26,13 @@ body {
     justify-content: space-between;
     padding: clamp(5px, 2vw, 15px) clamp(10px, 4vw, 30px);
     font-size: clamp(12px, 1.5vw, 15px);
+    border: 2px solid rgb(221, 255, 0);
 }
-
+.content{
+    height: 100vh;
+    width: 100%;
+    border: 2px solid red;
+}
 .headingh1 {
     font-size: clamp(40px, 10vw, 128px);
     line-height: clamp(50px, 11vw, 150px);
@@ -41,15 +46,23 @@ white-space: nowrap;
 .projects-section {
     height: 100vh;
     width: 100%;
+    border: 2px solid rgb(221, 255, 0);
     justify-content: space-between;
-    padding: clamp(5px, 2vw, 10px) clamp(10px, 4vw, 30px);
+    padding: clamp(15px, 2vw, 10px) clamp(10px, 4vw, 30px);
 }
 
 .project_1 {
     height: 65%;
     width: 25%;
-    margin: 0 auto;
     background: transparent;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.project_1 img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
 }
 
 .img-div {
@@ -59,8 +72,8 @@ white-space: nowrap;
 }
 
 .img-div img {
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: 10%;
 }
 
 .project-seen {
@@ -71,6 +84,7 @@ white-space: nowrap;
     font-weight: 100;
     height: 100vh;
     width: 100%;
+        border: 2px solid rgb(221, 255, 0);
     white-space: nowrap;
 }
 
