@@ -63,6 +63,7 @@ gsap.to(".projects-section", {
         pin: true, // Pins the section while scrolling horizontally
         start: "top top", // Starts when the section reaches the top of the viewport
         scrub: 1, // Smooth scrolling effect
+        mark:true,
         end: () => "+=" + document.querySelector(".projects-section").scrollWidth, // Ends after scrolling through all projects
     }
 });
