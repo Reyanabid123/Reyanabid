@@ -27,8 +27,8 @@ Shery.makeMagnet(".navbar-section h1, .section-4 button", {
     duration: 1,
 });
 
-Shery.textAnimate(".headingh1", {
-    style: 2,
+Shery.textAnimate(".headingh1,.project span", {
+    style: 1,
     y: 10,
     delay: 0.1,
     duration: 1,
@@ -40,31 +40,7 @@ Shery.hoverWithMediaCircle(".headingh1,.project-seen h1, .section-4 h2,project i
     images: ["image1.jpg", "image2.jpg", "image3.jpg"],
 
 });
-menuIcon.addEventListener('click', () => {
-    gsap.to(sidebarMenu, {
-        x: sidebarMenu.classList.contains('menu-open') ? 0 : 300,
-        duration: 0.8,
-        ease: "power2.out",
-    });
-    sidebarMenu.classList.toggle('menu-open');
-});
-Shery.imageEffect(".img-div img", {
+Shery.imageEffect(".project img", {
     style: 3,
-    debug: true,
-
+    preset:"../dist/config.json"
 });
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to(".projects-section", {
-    x: () => -(document.querySelector(".projects-section").scrollWidth - window.innerWidth),
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".projects-section",
-        pin: true, // Pins the section while scrolling horizontally
-        start: "top top", // Starts when the section reaches the top of the viewport
-        scrub: 1, // Smooth scrolling effect
-        mark:true,
-        end: () => "+=" + document.querySelector(".projects-section").scrollWidth, // Ends after scrolling through all projects
-    }
-});
-

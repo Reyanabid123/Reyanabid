@@ -19,17 +19,17 @@
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setClearColor(0xffffff, 0); // Set background to white with no adjustments to color
+        renderer.setClearColor(0xffffff, 0); // Set background to white with transparency
         document.body.appendChild(renderer.domElement);
+
+        let model, isDragging = false;
 
         // Load the 3D Model
         const loader = new THREE.GLTFLoader();
         loader.load('assects/images/mini_robot.glb', function(gltf) {
-            const model = gltf.scene;
+            model = gltf.scene;
             model.position.set(0, -1, 0);
-            model.scale.set(1, 1, 1);
-
-            // Add model to the scene without material adjustments
+            model.scale.set(2, 2, 2); // Make model slightly smaller
             scene.add(model);
             animate();
         }, undefined, function(error) {
@@ -53,9 +53,38 @@
         controls.dampingFactor = 0.05;
         controls.rotateSpeed = 0.3;
 
+        // Mouse movement tracking
+        const mouse = new THREE.Vector2();
+        const targetPosition = new THREE.Vector3();
+
+        // Magnetic effect and dragging logic
+        window.addEventListener('mousemove', (event) => {
+            if (!isDragging) {
+                // Map the mouse position to normalized device coordinates (-1 to +1)
+                mouse.x = (event.clientX / window.innerWidth) * 2  - 1;
+                mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            }
+        });
+
+        window.addEventListener('mousedown', () => {
+            isDragging = true;
+        });
+
+        window.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
         // Animation loop
         function animate() {
             requestAnimationFrame(animate);
+
+            if (model) {
+                // Set the target position based on mouse, creating a magnetic attraction effect
+                targetPosition.x = mouse.x * 0.5; // Smaller factor to control movement range
+                targetPosition.y = mouse.y * 0.5;
+                model.position.lerp(targetPosition, 0.05); // Smooth interpolation for magnetic feel
+            }
+
             controls.update();
             renderer.render(scene, camera);
         }

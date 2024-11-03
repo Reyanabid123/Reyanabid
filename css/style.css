@@ -47,16 +47,15 @@ body {
 }
 
 .projects-section {
-    display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow: hidden;
     /* Hides the scrollbar */
     height: 100vh;
     width: auto;
     gap: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
 .project {
@@ -67,6 +66,7 @@ body {
     height: 70vh;
     text-align: right;
     /* Prevents items from resizing */
+    border-radius: 10px;
 }
 .project img {
     height: 100%;
