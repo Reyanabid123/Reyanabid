@@ -12,7 +12,7 @@
     user-select: none;
     font-weight: 100;
     -webkit-user-select: none;
-    cursor: none;
+    /* cursor: none; */
 }
 
 html,
@@ -30,7 +30,12 @@ body {
     font-size: clamp(12px, 1.5vw, 15px);
     /* border: 2px solid rgb(221, 255, 0); */
 }
-
+.navbar-section i {
+    font-size: 30px;
+}
+.navbar-section h2 {
+    font-size: 40px;
+}
 .content {
     height: 100vh;
     width: 100%;
@@ -51,15 +56,28 @@ body {
 .projects-section {
     flex-wrap: wrap;
     overflow: hidden;
-    /* Hides the scrollbar */
-    height: 100vh;
-    width: auto;
-    gap: 20px;
+    height: 200vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
-
+.div-for-wedsite{
+    height: 100vh;
+    width: 100%;
+    border: 2px solid red;
+}
+.div-for-wedsite h1{
+    margin: 40px 100px;
+    font-size: 150px;
+}
+.div-inner{
+    margin-left: 60%;
+    background: rgb(243, 243, 238);
+    height: 3vh;
+    width:45%;
+}
 .project {
     width: 30vw;
     /* Adjust to show more or fewer projects per view */
@@ -73,7 +91,6 @@ body {
 .project img {
     height: 100%;
     width: 100%;
-    border-radius: 10px;
     object-fit: cover;
 }
 .project span{
