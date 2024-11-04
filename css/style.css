@@ -52,16 +52,39 @@ body {
     white-space: nowrap;
     cursor: none;
 }
-
 .projects-section {
-    flex-wrap: wrap;
-    overflow: hidden;
-    height: 200vh;
-    width: 100%;
     display: flex;
+ flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* Adjust the gap between projects */
+    width: 100%;
+    height: 200vh;
+}
+
+.project {
+    width: 38vw;
+    /* Adjust width to fit more projects in view */
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project span {
+    margin-top: 10px;
+    /* Add spacing between the image and text */
+    font-size: 1.2em;
+    font-weight: bold;
 }
 .div-for-wedsite{
     height: 100vh;
@@ -78,25 +101,6 @@ body {
     height: 3vh;
     width:45%;
 }
-.project {
-    width: 30vw;
-    /* Adjust to show more or fewer projects per view */
-    text-align: center;
-    flex: 0 0 auto;
-    height: 70vh;
-    text-align: right;
-    /* Prevents items from resizing */
-    border-radius: 10px;
-}
-.project img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.project span{
-    font-size: 20px;
-}
-
 .img-div {
     width: 100%;
     height: 80%;
