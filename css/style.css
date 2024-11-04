@@ -12,6 +12,7 @@
     user-select: none;
     font-weight: 100;
     -webkit-user-select: none;
+    cursor: none;
 }
 
 html,
@@ -44,6 +45,7 @@ body {
     margin: clamp(170px, 10vw, 150px);
     text-align: center;
     white-space: nowrap;
+    cursor: none;
 }
 
 .projects-section {
@@ -141,5 +143,22 @@ body {
     height: 50vh;
     width: 100%;
     /* border: 2px solid rgb(255, 0, 0); */
-    background: #000;
+    background:#0f110e;
+    display: flex;
+}
+.gorup1left{
+    width: 50%;
+    height: 100%;
+    border: 2px solid red;
+}
+.gorup1left img{
+    height: 40vh;
+    width: 40%;
+    border-radius: 2%;
+}
+.group2rigth{
+        width: 50%;
+            height: 100%;
+            border: 2px solid rgb(38, 0, 255);
+            float: left;
 }
